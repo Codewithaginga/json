@@ -1,0 +1,34 @@
+https://github.com/Codewithaginga/json.git
+import json
+
+airline_string = '''
+{   "airline": 
+     [
+     {
+     "name": "KENYA AIRWAYS",
+     "airport": "JKIA",
+     "fleet": "72",
+     "routes": ["london", "pretoria", "duala"]
+     },
+     {
+     "name": "BRITISH AIRWAYS",
+     "airport": "london heathrow",
+     "fleet": "90",
+     "routes": ["nairobi", "jfk", "paris"]
+     }
+     ]
+    
+    
+}'''
+
+
+data = json.loads(airline_string)
+
+# print(type(data['airline']))
+
+for air in data['airline']:
+    print(air)
+
+
+
+
